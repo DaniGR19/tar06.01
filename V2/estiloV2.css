@@ -1,0 +1,75 @@
+
+/*Propiedad de reseteo de css, de esta forma hacemos que cualquier navegador retire los estilos por defecto*/
+*{
+	margin: 0;
+	padding: 0;
+	list-style: none;
+	text-decoration: none;
+	border: none;
+	outline: none;
+}
+body{
+	/*position:relative;*/
+	width:1260px;
+	height: 500px;
+	border: 1px solid hotpink;
+	display: flow-root;
+	margin-top:45px;
+}
+main{
+	background-color:#E7FBBE;
+	display:flow-root;
+}
+main > div{
+	margin: 0 20px;
+	float: left;
+}	
+				/*Con esta función, estamos diciendo que aplique los siguientes atributos a los divs que
+				sean primeros hijos, exceptuando aquellos que sean hijos de otros div*/
+div#textoFormulario{
+	width:780px;
+	height:370px;
+	background-color:#FFCBCB;
+	padding:30px 10px 0px 10px;
+	
+	/*El tamaño total de la caja es de 760+20 de padding+20 margin*/
+}
+div#divConImagen{
+	width:370px;
+	background-color:#FFCBCB;
+	height:350px;
+	margin-left: 0;
+	padding: 50px 0 0 30px;
+}
+
+footer{
+	
+	height:100px;
+	background-color:#D9D7F1;
+	
+
+}
+form{
+	
+	padding:1em 0em;
+	padding-left:70px;
+	margin-top:4em;
+}
+input[type="text"]{
+	width:490px;/*Son 500 de width-10 de padding*/
+	padding-left:10px;
+}
+input[type="submit"]{
+	width:150px;
+	height:2em;
+	background-color:#D8D8D8;
+}
+img{
+	width:100%;
+	height:auto;
+}
+div#divImagen{
+	margin-left:30px;
+	margin-top:50px;
+	width:150px;
+}

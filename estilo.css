@@ -1,0 +1,54 @@
+body{
+	background-color:#E7FBBE;
+	margin:45px 20px 0px 20px;
+	width:1240px;
+	height:420px;
+
+}			
+				/*Con esta función, estamos diciendo que aplique los siguientes atributos a los divs que
+				sean primeros hijos, exceptuando aquellos que sean hijos de otros div*/
+div:first-child:not(div div){
+	width:760px;
+	height:370px;
+	background-color:#FFCBCB;
+	padding:30px 10px 0px 10px;
+	margin-right:20px;
+	float:left;
+	/*El tamaño total de la caja es de 760+20 de padding+20 margin*/
+}
+div:nth-child(2){
+	width:400px;
+	background-color:#FFCBCB;
+	float:left;
+	height:400px;
+}
+
+footer{
+	width:1260px;
+	height:100px;
+	background-color:#D9D7F1;
+	float:left;
+}
+form{
+	padding-left:70px;
+	padding:1em 0em;
+	margin-top:4em;
+}
+input[type="text"]{
+	width:500px;
+	padding-left:10px;
+}
+input[type="submit"]{
+	width:150px;
+	height:2em;
+	background-color:#D8D8D8;
+}
+img{
+	width:100%;
+	height:auto;
+}
+div#divImagen{
+	margin-left:30px;
+	margin-top:50px;
+	width:150px;
+}

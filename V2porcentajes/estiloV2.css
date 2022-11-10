@@ -1,0 +1,96 @@
+
+*{
+	margin: 0;
+	padding: 0;
+	list-style: none;
+	text-decoration: none;
+	border: none;
+	outline: none;
+}
+
+body{
+	
+	width:100%;
+	height: 500px;
+	border: 1px solid hotpink;
+	display: flow-root;
+	margin-top:45px;
+}
+/*LOS 1260PX QUE TIENE DE WIDTH DEL BODY, NO HAY QUE DISTRIBUIRLOS ENTRE SUS ELEMENTOS, YA QUE ESTOS OCUPARAN EL 100% DEL ANCHO DEL BODY*/
+main{
+	width:100%;
+	background-color:#E7FBBE;
+	display:flow-root;
+}
+
+footer{
+	
+	height:100px;
+	width:100%;
+	background-color:#D9D7F1;
+	
+
+}
+/*-------------------------------------------------------------------------------------------------------------------------------------------*/
+/*DISTRIBUCION DEL CONTENEDOR MAIN*/
+/* MAIN width = 1260PX */
+div#textoFormulario{
+	width:61.9047619%;    /* 780px(su ocupacion en px) * MAIN / 100%= 61.9047619% */
+	height:370px;
+	background-color:#FFCBCB;
+	padding:30px 0.793650793% 0px;/*10px(su ocupacion por cada lado) * 100/MAIN=0.793650793% */
+}
+div#divConImagen{
+	width:29.36507937%;	/*370px(ocupacion de su espacio util)*100/MAIN=29.36507937%*/
+	background-color:#FFCBCB;
+	height:350px;
+	margin-left: 0;
+	padding: 50px 0 0 2.380952381%;/*30px(ocupacion de padding izq)*100/MAIN=*/
+}
+
+main > div{
+	margin: 0 1.587301587%;/*20px (ocupacion del margin a cada lado)*100/MAIN=1.587301587%*/
+	float: left;
+}	
+/*-----------------------------------------------------------------------------------------------------------------------------------------------*/				
+/*DISTRIBUCION DEL CONTENEDOR div#textoFormulario*/
+/*div#textoFormulario width=780px o 61.9047619% del MAIN*/
+
+/*El formularip, al adaptarse a su contenido, podemos decir que su width seria de 490px*/
+form{
+	
+	padding:1em 0em;
+	padding-left:8.974358974%;/*70px(ocupacion del padding-left del formulario)*100/div#textoFormulario=8.974358974% */
+	margin-top:4em;
+}
+
+
+
+
+/*--------------------------------------------------*/
+
+/*DISTRIBUCION DEL CONTENEDOR FORMULARIO*/
+/*El formularip, al adaptarse a su contenido, podemos decir que su width seria de 500px(490px del width de sus elemento + 10px del padding left de sus elementos)*/
+input[type="text"]{
+	width:98%;/*490(espacio util del elemento)*100/formulario = 98%*/
+	padding-left:2%;/*Porcentaje restante del contenedor*/
+}
+input[type="submit"]{
+	width:30%;/*150*100/formulario=30%*/
+	height:2em;
+	background-color:#D8D8D8;
+}
+/*-------------------------------------------------*/
+
+/*DISTRIBUCION DEL CONTENEDOR div#divConImagen*/
+/*div#divConImagen width=370px*/
+img{
+	width:100%;
+	height:auto;
+}
+div#divImagen{
+	margin-left:8.108108108%; /*30px*100/*div#divConImagen=8.108108108*/
+	margin-top:50px;
+	width:40.540540540%;/*150*100/*div#divConImagen=40.540540540%/
+}
+/*---------------------------------------------------*/
